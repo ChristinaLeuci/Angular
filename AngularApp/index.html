@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="data">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="code.js"></script>
+  </head>
+  <body ng-controller="controller1">
+    <ul>
+      <li ng-repeat="item in list">{{item}}</li>
+    </ul>
+    <input ng-model="newitem"></input>
+    <button ng-click="additem()">Commit</button>
+  </body>
+</html>
+
+<!-- list with an edit form where you can enter input and it will auto -->
